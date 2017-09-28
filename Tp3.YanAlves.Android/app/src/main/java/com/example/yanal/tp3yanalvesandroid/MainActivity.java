@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         databaseNode = database.getReference("teste");
 
-        databaseNode.setValue("Yan");
+        databaseNode.setValue("Pedro");
     }
 }
