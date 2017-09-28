@@ -104,6 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="LimparFormulario"
             android:text="Limpar"
             tools:layout_editor_absoluteX="195dp"
             tools:layout_editor_absoluteY="389dp" />
