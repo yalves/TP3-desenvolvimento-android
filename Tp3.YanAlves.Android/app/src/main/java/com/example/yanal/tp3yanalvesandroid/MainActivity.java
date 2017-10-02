@@ -72,12 +72,7 @@ public class MainActivity extends AppCompatActivity {
             senha.isEmpty() ||
             telefone.isEmpty())
         {
-            Context contexto = getApplicationContext();
-            String texto = "Preencha todos os campos do formulario";
-            int duracao = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(contexto, texto,duracao);
-            toast.show();
+            Toast("Preencha todos os campos do formulario");
 
             return;
         }
@@ -94,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
 
         LimparFormulario(view);
 
+        Toast("Usuário salvo com sucesso");
+
     }
 
     private void SalvarUsuario(Usuario usuario) {
@@ -107,5 +104,15 @@ public class MainActivity extends AppCompatActivity {
         for (EditText campo: campos) {
             campo.setText("");
         }
+    }
+
+    private void Toast(String mensagem)
+    {
+        Context contexto = getApplicationContext();
+        String texto = mensagem;
+        int duracao = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(contexto, texto,duracao);
+        toast.show();
     }
 }
