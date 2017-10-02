@@ -1,10 +1,12 @@
 package com.example.yanal.tp3yanalvesandroid.Domain;
 
+import java.io.Serializable;
+
 /**
  * Created by yanal on 28/09/2017.
  */
 
-public class Usuario {
+public class Usuario implements Serializable {
 
     private String Nome;
     private String Senha;

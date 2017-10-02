@@ -1,6 +1,7 @@
 package com.example.yanal.tp3yanalvesandroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -91,6 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
         Toast("Usuário salvo com sucesso");
 
+    }
+
+    public void VisualizarUsuarios(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, Activity_list.class);
+        startActivity(intent);
     }
 
     private void SalvarUsuario(Usuario usuario) {

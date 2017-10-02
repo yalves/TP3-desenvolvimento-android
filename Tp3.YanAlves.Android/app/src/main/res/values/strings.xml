@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tp3.YanAlves.Android</string>
+    <string name="lista_vazia">Nenhum registro foi encontrado</string>
 </resources>
